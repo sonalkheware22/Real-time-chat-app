@@ -26,7 +26,8 @@ function Login() {
         <h2>LOGIN</h2>
         {error && <p className="error-message">{error}</p>}
         <form onSubmit={handleLogin}>
-          <div className="input-field">
+          <div className="form-group">
+            <label>Email</label>
             <input
               type="email"
               placeholder="Email"
@@ -34,7 +35,8 @@ function Login() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="input-field">
+          <div className="form-group">
+            <label>Password</label>
             <input
               type="password"
               placeholder="Password"
